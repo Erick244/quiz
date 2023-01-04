@@ -1,0 +1,38 @@
+.alternative {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 3px solid #3b3f5a;
+	cursor: pointer;
+	font-family: monospace;
+}
+
+.alternative  i {
+	display: flex;
+	margin-right: 15px;
+	color: #3b3f5a;
+	font-size: 2.1rem;
+	border-radius: 50%;
+}
+
+i.currect {
+	color: aqua;
+}
+
+i.err {
+	color: crimson;
+}
+
+.alternativeText {
+	color: #fff;
+	font-size: 0.9rem;
+}
+
+.currect {
+	border-color: aqua;
+}
+
+.err {
+	border-color: crimson;
+}

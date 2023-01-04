@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	align-items: center;
+	grid-area: header;
+}
+
+.logo {
+	margin-left: 20px;
+	color: #fff;
+	font-size: 3rem;
+	font-family: "Unbounded", sans-serif;
+}

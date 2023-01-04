@@ -1,0 +1,73 @@
+.title {
+	margin-top: 20px;
+	font-family: "Unbounded", sans-serif;
+	text-align: center;
+	font-weight: 300;
+	color: #fff;
+}
+
+.hr {
+	border: 2px solid #2e3453;
+	margin: 30px 0px;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: "Unbounded", sans-serif;
+}
+
+.infos > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.infos > div > i {
+	padding-top: 10px;
+	margin-right: 10px;
+	font-size: 4rem;
+}
+
+.infos .hits {
+	background: linear-gradient(to right, #00ffff80, transparent);
+	color: #fff;
+	border: 3px solid #00ffff;
+	animation: bg-hits-animation 2s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes bg-hits-animation {
+	0% {
+		filter: drop-shadow(16px 16px 20px #00ffff80);
+	}
+}
+
+.infos .mistakes {
+	background: linear-gradient(to right, #dc143c80, transparent);
+	color: #fff;
+	border: 3px solid #dc143c;
+	animation: bg-mistakes-animation 2s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes bg-mistakes-animation {
+	0% {
+		filter: drop-shadow(16px 16px 20px #dc143c80);
+	}
+}
+
+.infos .annulled {
+	background: linear-gradient(to right, #40444380, transparent);
+	color: #fff;
+	border: 3px solid #404443;
+	animation: bg-annulled-animation 2s infinite alternate cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes bg-annulled-animation {
+	0% {
+		filter: drop-shadow(16px 16px 20px #74747480);
+	}
+}

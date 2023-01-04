@@ -1,0 +1,11 @@
+.layout {
+	max-width: 1000px;
+	height: 100vh;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 0.9fr;
+	grid-template-areas: 
+	"header"
+	"main";
+}

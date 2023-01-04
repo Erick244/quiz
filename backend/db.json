@@ -1,0 +1,248 @@
+{
+	"jsQuestions": [
+		{
+			"id": 1,
+			"question": "O valor de uma constante pode ser mudado após a sua declaração?",
+			"alternative_a": "Sim, desde que a constante não tenha sido utilizada.",
+			"alternative_b": "Sim, uma constante pode ter seu valor mutável.",
+			"alternative_c": "Não, uma vez declarado o valor não pode ser modificado.",
+			"currect_alternative": "Não, uma vez declarado o valor não pode ser modificado."
+		},
+		{
+			"id": 2,
+			"question": "A função getElementsByClassName(), retorna que tipo de conteúdo?",
+			"alternative_a": "Retorna um array de elementos que contém a classe informada no atributo class.",
+			"alternative_b": "Retorna um único elemento.",
+			"alternative_c": "Retorna um JSON contendo as informações dos elementos.",
+			"currect_alternative": "Retorna um array de elementos que contém a classe informada no atributo class."
+		},
+		{
+			"id": 3,
+			"question": "Qual definição de uma classe abaixo está correta?",
+			"alternative_a": "class Carro ({ });",
+			"alternative_b": "public class Carro { }",
+			"alternative_c": "class Carro { }",
+			"currect_alternative": "class Carro { }"
+		},
+		{
+			"id": 4,
+			"question": "Qual definição de função abaixo é inválida?",
+			"alternative_a": "void minhaFuncao() {}",
+			"alternative_b": "() => {}",
+			"alternative_c": "function minhaFuncao() {}",
+			"currect_alternative": "void minhaFuncao() {}"
+		},
+		{
+			"id": 5,
+			"question": "Para acessarmos um elemento através de seu ID, usamos:",
+			"alternative_a": "getElementbyid('id_do_elemento');",
+			"alternative_b": "document.getElementById('id_do_elemento');",
+			"alternative_c": "document.getelementbyid('id_do_elemento');",
+			"currect_alternative": "document.getElementById('id_do_elemento');"
+		},
+		{
+			"id": 6,
+			"question": "Para finalizar o loop atual e prosseguir para a próxima iteração, usamos:",
+			"alternative_a": "continue;",
+			"alternative_b": "break;",
+			"alternative_c": "exit;",
+			"currect_alternative": "continue;"
+		},
+		{
+			"id": 7,
+			"question": "Qual definição de array está incorreta?",
+			"alternative_a": "var frutas = (array)list('maça', 'uva');",
+			"alternative_b": "var frutas = ['maça', 'uva'];",
+			"alternative_c": "var frutas = new Array('maça', 'uva');",
+			"currect_alternative": "var frutas = (array)list('maça', 'uva');"
+		},
+		{
+			"id": 8,
+			"question": "Para executarmos uma operação a cada 1 segundo, podemos usar:",
+			"alternative_a": "function() : 100 {/*Minha operação */}",
+			"alternative_b": "sleep(1000, ()=>{/* Minha operação */})",
+			"alternative_c": "setInterval(() => { /*Minhaoperação*/ }, 1000);",
+			"currect_alternative": "setInterval(() => { /*Minhaoperação*/ }, 1000);"
+		},
+		{
+			"id": 9,
+			"question": "Usamos try/catch para:",
+			"alternative_a": "Funciona como o if/else, verifica se uma operação foi executada.",
+			"alternative_b": "Tratar instruções que possam gerar erros, e assim, lançar exceções.",
+			"alternative_c": "Podemos usar essa estrutura quando queremos acessar elementos nativos do navegador.",
+			"currect_alternative": "Tratar instruções que possam gerar erros, e assim, lançar exceções."
+		},
+		{
+			"id": 10,
+			"question": "Qual objeto literal abaixo está correto?",
+			"alternative_a": "var obj = { nome: 'meu nome'}  ",
+			"alternative_b": "var obj = { nome = 'meu nome'}",
+			"alternative_c": "var obj = nome => 'Meu nome'",
+			"currect_alternative": "var obj = { nome: 'meu nome'}  "
+		}
+	],
+	"cssQuestions": [
+		{
+			"id": 1,
+			"question": "Para adicionar um espaçamento interno, usamos:",
+			"alternative_a": "margin:",
+			"alternative_b": "text-spacing:",
+			"alternative_c": "padding:",
+			"currect_alternative": "padding:"
+		},
+		{
+			"id": 2,
+			"question": "Para adicionar uma margem de 10px ao topo, podemos usar?",
+			"alternative_a": "margin: 10px top;",
+			"alternative_b": "top-margin: 10px;",
+			"alternative_c": "margin: 10px 0 0 0;",
+			"currect_alternative": "margin: 10px 0 0 0;"
+		},
+		{
+			"id": 3,
+			"question": "Qual pseudo-classe abaixo é invalido?",
+			"alternative_a": ":nth-child {}",
+			"alternative_b": ":root {}",
+			"alternative_c": ":stroke {}",
+			"currect_alternative": ":stroke {}"
+		},
+		{
+			"id": 4,
+			"question": "Para adicionar sombra a um texto, usamos:",
+			"alternative_a": "text-shadow: 2px 2px #cor;",
+			"alternative_b": "shadow: 2px #cor;",
+			"alternative_c": "text-color: 2px #888888;",
+			"currect_alternative": "text-shadow: 2px 2px #cor;"
+		},
+		{
+			"id": 5,
+			"question": "Para adicionar um efeito a um elemento quando o mouse passa sobre, usamos qual pseudo-classe?",
+			"alternative_a": ":active {}",
+			"alternative_b": ":hover {}",
+			"alternative_c": ":focus {}",
+			"currect_alternative": ":hover {}"
+		},
+		{
+			"id": 6,
+			"question": "Para alterar a cor de fundo de um elemento, usamos:",
+			"alternative_a": "color-background: cor;",
+			"alternative_b": "background-color: cor;",
+			"alternative_c": "bg-color: cor;",
+			"currect_alternative": "background-color: cor;"
+		},
+		{
+			"id": 7,
+			"question": "Para alinhar um texto ao centro, usamos?",
+			"alternative_a": "text-align: center;",
+			"alternative_b": "text-center: true;",
+			"alternative_c": "align: center;",
+			"currect_alternative": "text-align: center;"
+		},
+		{
+			"id": 8,
+			"question": "Para definir a largura máxima de um elemento, usamos:",
+			"alternative_a": "max-width:",
+			"alternative_b": "max-content:",
+			"alternative_c": "width-range:",
+			"currect_alternative": "max-width:"
+		},
+		{
+			"id": 9,
+			"question": "Qual propriedade devemos utilizar para alterar a cor de um texto?",
+			"alternative_a": "text-color:",
+			"alternative_b": "font-color:",
+			"alternative_c": "color:",
+			"currect_alternative": "color:"
+		},
+		{
+			"id": 10,
+			"question": "Como devemos usar uma variável no CSS?",
+			"alternative_a": "color: variavel-cor;",
+			"alternative_b": "color: var(variavel-cor)",
+			"alternative_c": "Não existe variável no CSS",
+			"currect_alternative": "color: var(variavel-cor)"
+		}
+	],
+	"htmlQuestions": [
+		{
+			"id": 1,
+			"question": "Como devemos chamar um script css?",
+			"alternative_a": "<a href='link css'></a>",
+			"alternative_b": "<script href='link css'>",
+			"alternative_c": "<link rel='stylesheet' href='link css'>",
+			"currect_alternative": "<link rel='stylesheet' href='link css'>"
+		},
+		{
+			"id": 2,
+			"question": "Como deve ser declarado um título da página?",
+			"alternative_a": "<title>Título aqui</title>",
+			"alternative_b": "<html title='Título aqui'></html>",
+			"alternative_c": "<title title='titulo'>",
+			"currect_alternative": "<title>Título aqui</title>"
+		},
+		{
+			"id": 3,
+			"question": "Qual atributo devemos utilizar para inserir propriedades CSS?",
+			"alternative_a": "style=''",
+			"alternative_b": "css=''",
+			"alternative_c": "css-style=''",
+			"currect_alternative": "style=''"
+		},
+		{
+			"id": 4,
+			"question": "Qual a forma correta de se criar um link?",
+			"alternative_a": "<a href='link'>link aqui</a>",
+			"alternative_b": "<link rel='Link' value='Link aqui'>",
+			"alternative_c": "<span href='link'>Link aqui</span>",
+			"currect_alternative": "<a href='link'>link aqui</a>"
+		},
+		{
+			"id": 5,
+			"question": "Qual tag abaixo pertence ao corpo de uma tabela?",
+			"alternative_a": "<thead>",
+			"alternative_b": "<footer>",
+			"alternative_c": "<tf>",
+			"currect_alternative": "<thead>"
+		},
+		{
+			"id": 6,
+			"question": "Como devemos chamar um script JS?",
+			"alternative_a": "<link rel='script' href='link'>",
+			"alternative_b": "<script src='link script'></script>",
+			"alternative_c": "<script src='link script'>",
+			"currect_alternative": "<script src='link script'></script>"
+		},
+		{
+			"id": 7,
+			"question": "Qual a forma correta de se criar uma imagem?",
+			"alternative_a": "<figure src='link imagem'></figure>",
+			"alternative_b": "<img src='link imagem'>",
+			"alternative_c": "<img>link imagem</img>",
+			"currect_alternative": "<img src='link imagem'>"
+		},
+		{
+			"id": 8,
+			"question": "Qual Tag abaixo pertence ao HTML?",
+			"alternative_a": "<super>",
+			"alternative_b": "<sup>",
+			"alternative_c": "<weight>",
+			"currect_alternative": "<sup>"
+		},
+		{
+			"id": 9,
+			"question": "Qual tag abaixo não pertence ao HMTL?",
+			"alternative_a": "<br>",
+			"alternative_b": "<span></span>",
+			"alternative_c": "<color></color>",
+			"currect_alternative": "<color></color>"
+		},
+		{
+			"id": 10,
+			"question": "Qual a forma correta de se usar charset utf-8 na página?",
+			"alternative_a": "<meta charset='UTF-8'>",
+			"alternative_b": "<html charset='UTF-8'></html>",
+			"alternative_c": "<charset></charset>",
+			"currect_alternative": "<meta charset='UTF-8'>"
+		}
+	]
+}

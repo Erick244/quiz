@@ -1,0 +1,40 @@
+.category {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 0;
+	margin-bottom: 50px;
+	border: 2px solid #3b3f5a;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 300ms ease;
+}
+
+.category:hover {
+	border: 2px solid #fff;
+	filter: drop-shadow(16px 16px 20px #ffffff60);
+	transform: scale(1.01);
+}
+
+.category > h1 {
+	font-family: "Unbounded", sans-serif;
+	margin-left: 20px;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;
+}
+
+.category > i {
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff;
+	border-radius: 10px;
+	font-size: 5rem;
+	margin: 10px 20px 10px 0px;
+	transform: rotate(20deg);
+	transition: transform 300ms ease;
+}
+
+.category:hover > i {
+	transform: rotate(0deg);
+}
