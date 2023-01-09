@@ -28,22 +28,25 @@
 	width: 170px;
 	height: 7px;
 	border-radius: 10px;
-	background-color: #3b3f5a;
+	background-color: var(--color1);
 	overflow: hidden;
 }
 
 .quizProgress .progressBar>.progress {
 	height: 100%;
-	background-color: #5747b7;
+	background-color: var(--bg-color);
 	transition: 300ms ease;
 }
 
 .infoBar hr {
-	border: 2px solid #2e3453;
+	width: 100%;
+	height: 3px;
+	background: var(--hr-gradient);
+	border: none;
 }
 
 .bar2 {
-	color: #565980;
+	color: var(--color2);
 }
 
 .quizTime {
@@ -70,5 +73,5 @@
 	align-items: center;
 	color: #fff;
 	border-radius: 50%;
-	background-color: #282d49;
+	background-color: var(--main-color);
 }

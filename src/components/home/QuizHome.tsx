@@ -1,6 +1,5 @@
 import { CssIcon, HtmlIcon, JsIcon } from "../view/Icons";
 import Category from "./Category";
-
 import css from "../../styles/QuizHome.module.css";
 
 export default function QuizHome() {

@@ -3,15 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
+:root {
+	--main-color: #282d49;
+	--color1: #3b3f5a;
+	--color2: #565980;
+	--bg-color: #5747b7;
+	--header-bg-color: #ffffff52;
+	--hr-gradient: linear-gradient(to right, #2e345380, #32395a, #2e345380);
+	--bg-image: url(../assets/imgs/background-dark.jpg) center center #000 no-repeat;
+}
+
 html,
 body {
 	height: 100vh;
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: url(../assets/imgs/background-dark.jpg) center center #000 no-repeat;
+	-moz-osx-font-smoothing: grayscale;	
+	background: var(--bg-image);
 	background-size: cover;
-
 }
 
 a {
@@ -23,8 +32,11 @@ a {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	transition: background-color, color, border, background, 50ms ease;
 }
 
 .v-middle {
 	vertical-align: middle;
 }
+
+

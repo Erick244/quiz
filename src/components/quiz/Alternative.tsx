@@ -1,29 +1,20 @@
+import { useEffect } from "react";
+import { CircleIcon } from "../view/Icons";
+import { AlternativeProps } from "../../interfaces/Props";
+import useQuiz from "../../hooks/useQuiz";
 import css from "../../styles/Alternative.module.css";
-import { useState, useEffect, ReactNode } from "react";
-import { CheckIcon, CircleIcon, CloseIcon } from "../view/Icons";
-
-interface AlternativeProps {
-	alternative: string;
-	currectAlternative: string;
-	click: () => void;
-	alreadyClicked: boolean;
-}
 
 export default function Alternative(props: AlternativeProps) {
-	const [showIcon, setShowIcon] = useState<boolean>(false);
-	const [alternativeIsCurrect, setAlternativeIsCurrect] = useState<boolean | null>(null);
-	const [icon, setIcon] = useState<ReactNode>(CheckIcon);
 
-	function validateAlternative() {
-		if (props.alternative === props.currectAlternative) {
-			setAlternativeIsCurrect(true);
-			setIcon(CheckIcon);
-		} else {
-			setAlternativeIsCurrect(false);
-			setIcon(CloseIcon);
-		}
-	}
-
+	const { 
+		setAlternativeIsCurrect,
+		setShowIcon,
+		alternativeIsCurrect,
+		validateAlternative,
+		showIcon,
+		icon
+	} = useQuiz();
+	
 	useEffect(() => {
 		setAlternativeIsCurrect(null);
 		setShowIcon(false);
@@ -40,7 +31,7 @@ export default function Alternative(props: AlternativeProps) {
 				props.click?.();
 				if (!props.alreadyClicked) {
 					setShowIcon(true);
-					validateAlternative();
+					validateAlternative(props.alternative, props.currectAlternative);
 				}
 			}}
 		>

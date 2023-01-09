@@ -1,4 +1,6 @@
 import React, { createContext, useState, SetStateAction, Dispatch, useContext } from "react";
+import bgImageDark from "../assets/imgs/background-dark.jpg";
+import { StaticImageData } from "next/image";
 
 interface StoreProps {
 	hits: number;
@@ -9,6 +11,8 @@ interface StoreProps {
 	setAnnulled: Dispatch<SetStateAction<number>>;
 	questionsLeft: number;
 	setQuestionsLeft: Dispatch<SetStateAction<number>>;
+	theme: "light" | "dark";
+	setTheme: Dispatch<SetStateAction<"light" | "dark">>;
 	resetStore: () => void;
 }
 
@@ -21,7 +25,9 @@ const Store = createContext<StoreProps>({
 	setAnnulled: (): number => 0,
 	questionsLeft: 9,
 	setQuestionsLeft: (): number => 9,
-	resetStore: () => null
+	theme: "dark",
+	setTheme: (): "light" | "dark" => "dark",
+	resetStore: () => null,
 });
 
 export default function StoreProvider({ children }: any) {
@@ -29,6 +35,7 @@ export default function StoreProvider({ children }: any) {
 	const [mistakes, setMistakes] = useState<number>(0);
 	const [annulled, setAnnulled] = useState<number>(0);
 	const [questionsLeft, setQuestionsLeft] = useState<number>(9);
+	const [theme, setTheme] = useState<"light" | "dark">("dark");
 
 	const resetStore = () => {
 		setQuestionsLeft(9);
@@ -47,6 +54,8 @@ export default function StoreProvider({ children }: any) {
 			setHits,
 			setMistakes,
 			setQuestionsLeft,
+			theme,
+			setTheme,
 			resetStore
 		}}>
 			{children}

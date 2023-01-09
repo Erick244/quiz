@@ -1,6 +1,7 @@
 .header {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	grid-area: header;
 }
 
@@ -9,4 +10,32 @@
 	color: #fff;
 	font-size: 3rem;
 	font-family: "Unbounded", sans-serif;
+}
+
+.themeButton {
+	width: 60px;
+	height: 30px;
+	padding: 5px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--header-bg-color);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.themeButton i {
+	color: #fff;
+}
+
+.themeButton > span {
+	height: 20px;
+	width: 30px;
+	position: absolute;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	transition: 300ms all ease;
 }

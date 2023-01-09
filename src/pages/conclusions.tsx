@@ -1,7 +1,6 @@
 import { CheckIcon, CloseIcon, TimeIcon } from "../components/view/Icons";
 import Layout from "../components/view/Layout";
 import { useStore } from "../config/store";
-
 import css from "../styles/Conclusions.module.css";
 
 export default function Conclusions() {

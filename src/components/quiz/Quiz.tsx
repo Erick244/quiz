@@ -1,34 +1,27 @@
 import Question from "../../interfaces/Question";
-import { useState, useEffect } from "react";
-import css from "../../styles/Quiz.module.css";
 import Alternative from "./Alternative";
 import InfoBar from "./InfoBar";
+import useQuiz from "../../hooks/useQuiz";
 import { errorMessage } from "../../config/message";
-import { useRouter } from "next/router";
-import { useStore } from "../../config/store";
-
-interface QuizProps {
-	questions: Question[];
-}
+import { QuizProps } from "../../interfaces/Props";
+import css from "../../styles/Quiz.module.css";
 
 export default function Quiz(props: QuizProps) {
-	const router = useRouter();
-	const { hits, setHits, mistakes, setMistakes, questionsLeft, setQuestionsLeft } = useStore();
-	const [alreadyClicked, setAlreadyClicked] = useState<boolean>(false);
 
+	const {
+		questionsLeft,
+		alreadyClicked,
+		checkHit,
+		setAlreadyClicked,
+		setQuestionsLeft,
+		router
+	} = useQuiz();
+	
 	const currectAlternative = props.questions[questionsLeft]?.currect_alternative;
 	const alternatives = {
 		a: props.questions[questionsLeft]?.alternative_a,
 		b: props.questions[questionsLeft]?.alternative_b,
 		c: props.questions[questionsLeft]?.alternative_c
-	}
-
-	function checkHit(alternative: string) {
-		if (alternative === currectAlternative) {
-			setHits(hits + 1);
-		} else {
-			setMistakes(mistakes + 1);
-		}
 	}
 
 	return (
@@ -40,7 +33,7 @@ export default function Quiz(props: QuizProps) {
 			<Alternative
 				click={() => {
 					setAlreadyClicked(true);
-					checkHit(alternatives.a);
+					checkHit(alternatives.a, currectAlternative);
 				}}
 				alreadyClicked={alreadyClicked}
 				currectAlternative={currectAlternative}
@@ -49,7 +42,7 @@ export default function Quiz(props: QuizProps) {
 			<Alternative
 				click={() => {
 					setAlreadyClicked(true);
-					checkHit(alternatives.b);
+					checkHit(alternatives.b, currectAlternative);
 				}}
 				alreadyClicked={alreadyClicked}
 				currectAlternative={currectAlternative}
@@ -58,7 +51,7 @@ export default function Quiz(props: QuizProps) {
 			<Alternative
 				click={() => {
 					setAlreadyClicked(true);
-					checkHit(alternatives.c);
+					checkHit(alternatives.c, currectAlternative);
 				}}
 				alreadyClicked={alreadyClicked}
 				currectAlternative={currectAlternative}
